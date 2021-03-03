@@ -2,6 +2,7 @@
   "name": "arath.dev",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://arathvelazquez.github.io",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
@@ -26,7 +27,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "deploy": "craco build; aws s3 sync build/ s3://arath.dev;",
+    "predeploy": "craco build",
+    "deploy": "aws s3 sync build/ s3://arath.dev; gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -46,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

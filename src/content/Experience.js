@@ -1,9 +1,35 @@
 import React, { useState } from 'react';
 import { experience } from '../data/experience';
+import Technology from '../components/Technology';
+import { faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 
 const Experience = () => {
 
   const [search, setSearch] = useState(0);
+
+  const software = (stack) => {
+
+    let maxPerRow = 3;
+    let items = Math.floor(stack.length / maxPerRow);
+
+    let resultComponent = [];
+    for (let i = 1; i <= items + 1; i++) {
+      let start = parseInt((i - 1) * maxPerRow);
+      let end = parseInt(i * maxPerRow);
+
+      let tempArray = stack.slice(start, end);
+
+      resultComponent.push(
+        <div className="flex">
+          {tempArray.map((tool, index) => {
+            return <Technology name={tool} key={index + tool} />
+          })}
+        </div>
+      )
+    }
+
+    return resultComponent;
+  }
 
   const jobs = experience.filter(data => {
     if (search === 0) {
@@ -11,23 +37,29 @@ const Experience = () => {
     } else {
       return data.category.includes(search);
     }
-    
   }).map((data, key) => {
     return (
-      <div key={key} className="m-auto w-10/12 mb-12 text-center md:grid md:grid-flow-col md:grid-cols-3 md:gap-4">
-        <div>
-          <div className="m-auto md:m-0 w-7/12 md:w-9/12 text-white text-xl bg-primary block p-2 uppercase font-extrabold">
+      <div key={key} className="m-auto w-10/12 mb-12 text-center md:grid md:grid-cols-12 md:gap-4 md:text-left">
+        <div className="md:col-start-1 md:col-end-7 xl:col-end-8">
+          <div className="m-auto text-black text-2xl block uppercase font-extrabold">
             {data.companyName}
           </div>
-          <div className="m-auto md:m-0 w-9/12 md:w-10/12 text-primary text-xs bg-secondary block p-2">
+          <div className="m-auto text-primary text-sm block">
             {data.role}
           </div>
-          <div className="md:text-left mt-1 text-xs">
+          <div className="text-xs">
+            {data.location}
+          </div>
+          <div className="text-xs">
             {data.period}
           </div>
+          <div className="inline">
+            {software(data.stack)}
+          </div>
+          <p className="text-sm mt-4 md:text-justify" dangerouslySetInnerHTML={{ __html: data.description }}></p>
         </div>
-        <div className="md:row-start-1 md:col-start-2 md:col-span-2">
-          <p className="text-sm text-justify" dangerouslySetInnerHTML={{ __html: data.description }}></p>
+        <div className="mt-3 md:col-span-6 xl:col-span-5">
+          <img className="m-auto" src={data.image[0]} alt="website logo"/>
         </div>
       </div>
     )
@@ -37,11 +69,11 @@ const Experience = () => {
     <div>
       <div className="w-full flex justify-between text-center mb-16">
       <ul className="m-auto text-sm font-12 text-black uppercase">
-        <li className={search === 'professional' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 hover:shadow-link focus:outline-none'}><a href="#" className="cursor-pointer" onClick={(e)=> {setSearch('professional'); e.preventDefault();}}>Professional</a></li>
-        <li className={search === 'freelance' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 hover:shadow-link focus:outline-none'}><a href="#" className="cursor-pointer" onClick={(e)=> {setSearch('freelance'); e.preventDefault();}}>Freelance</a></li>
-        <li className={search === 'entrepreneur' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 hover:shadow-link focus:outline-none'}><a href="#" className="cursor-pointer" onClick={(e)=> {setSearch('entrepreneur'); e.preventDefault();}}>Entrepreneur</a></li>
-        <li className={search === 'just_for_fun' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 hover:shadow-link focus:outline-none'}><a href="#" className="cursor-pointer" onClick={(e)=> {setSearch('just_for_fun'); e.preventDefault();}}>Just for Fun</a></li>
-        <li className={search === 'concepts' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 hover:shadow-link focus:outline-none'}><a href="#" className="cursor-pointer" onClick={(e)=> {setSearch('concepts'); e.preventDefault();}}>Concepts</a></li>
+        <li className={search === 'professional' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('professional'); e.preventDefault();}}>Professional</a></li>
+        <li className={search === 'freelance' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('freelance'); e.preventDefault();}}>Freelance</a></li>
+        <li className={search === 'entrepreneur' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('entrepreneur'); e.preventDefault();}}>Entrepreneur</a></li>
+        <li className={search === 'just_for_fun' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('just_for_fun'); e.preventDefault();}}>Just for Fun</a></li>
+        <li className={search === 'concepts' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('concepts'); e.preventDefault();}}>Concepts</a></li>
       </ul>
     </div>
       {jobs}
