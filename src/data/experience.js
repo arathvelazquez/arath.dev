@@ -8,7 +8,7 @@ export const experience = [
     category: ['professional'],
     role: 'Fullstack Dev & AWS Tech Lead',
     stack: ['Node.js', 'AWS Lambda', 'AWS S3', 'AWS CloudFormation', 'AWS Dynamo', 'React.js', 'OKTA'],
-    image: ['experience/columbia.jpg'],
+    image: ['experience/columbia_front.png'],
     period: 'Dec 2018 - Present',
     description: 'Accountable for implementation of microservices and RESTful APIs running in AWS with Lambda (Node.js), Dynamo, S3, CloudWatch, CloudFormation, SES, JWT, OKTA, Swagger and MongoDB (Atlas). <br /> Most recently, I have been involved in all the aspects of development and also provide production support, analysis, feature enhancements, mentoring, unit testing and code reviews. <br /> As Tech Lead, I work closely with the entire AWS team, Architects, Product Owners, Business Analysts, DevOps and SFCC team to integrate our endpoints, jobs and tasks'
   },
@@ -21,7 +21,7 @@ export const experience = [
     category: ['professional', 'freelance', 'entrepreneur'],
     role: 'Partner & Fullstack Developer',
     stack: ['Node.js', 'MongoDB', 'Angular', 'Elastic Search', 'Express.js', 'E-Commerce', 'Digital Ocean', 'Material Design', 'Mandrill'],
-    image: ['experience/mediahunter.jpg'],
+    image: ['experience/mediahunter_front.png'],
     period: 'Dec 2014 - Present',
     description: 'During this period, I worked for two different companies as freelance and then I started working fulltime for one of these. I was the main developer for a startup called MediaHunter and also I was working remotely as Node.js (MEAN) developer for a company based on Seattle and in February 2018 I started working fulltime with them. <br /> For both companies, I performed most of the development and created Ecommerce platforms with Node.js, Angular, Bootstrap, Material Design, ElasticSearch and MongoDB. I also performed all the implementation for database and web servers by using independent VPS and did the integration of different services and API\'s such as Google Maps, Mandrill for transactional emails, DigitalOcean, Google Cloud among others.'
   },
@@ -34,7 +34,7 @@ export const experience = [
     category: ['professional'],
     role: 'Fullstack Developer',
     stack: ['Node.js', 'AWS', 'MongoDB', 'React.js', 'HTML & CSS', 'Express'],
-    image: ['experience/itexico.jpg'],
+    image: ['experience/itexico_front.png'],
     period: 'Oct 2017 - Feb 2018',
     description: 'Worked as Full Stack for MediaShift (AdTech Platform Solution) to create a dashboard by using Mongo, Node.js and React.js stack.'
   },
@@ -123,7 +123,7 @@ export const experience = [
     category: ['concepts', 'just_for_fun', 'freelance'],
     role: 'Software Developer',
     stack: ['PHP', 'Javascript', 'SQL', 'HTML & CSS'],
-    image: ['imgs/ush.mx_1.png'],
+    image: ['experience/ush.mx_1.png'],
     period: '2011 - 2012 [Shut down]',
     description: 'Created some plugins for Wordpress and some chrome extensions.  for a service I created called ush.mx (URL shortener)'
   }
