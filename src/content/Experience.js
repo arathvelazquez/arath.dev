@@ -7,6 +7,16 @@ const Experience = () => {
 
   const [search, setSearch] = useState(0);
 
+  const addImage = (image) => {
+    if (image) {
+      return (
+        <div className="mt-3 md:col-span-6 xl:col-span-5">
+          <img className="m-auto" src={image} alt="website logo"/>
+        </div>
+      )
+    }
+  }
+
   const software = (stack) => {
 
     let maxPerRow = 3;
@@ -40,7 +50,7 @@ const Experience = () => {
   }).map((data, key) => {
     return (
       <div key={key} className="m-auto w-10/12 mb-12 text-center md:grid md:grid-cols-12 md:gap-4 md:text-left">
-        <div className="md:col-start-1 md:col-end-7 xl:col-end-8">
+        <div className={data.image[0] ? "md:col-start-1 md:col-end-7 xl:col-end-8" : "md:col-start-1 md:col-end-12"}>
           <div className="m-auto text-black text-2xl block uppercase font-extrabold">
             {data.companyName}
           </div>
@@ -53,14 +63,12 @@ const Experience = () => {
           <div className="text-xs">
             {data.period}
           </div>
-          <div className="inline">
+          <div className="md:inline hidden">
             {software(data.stack)}
           </div>
           <p className="text-sm mt-4 md:text-justify" dangerouslySetInnerHTML={{ __html: data.description }}></p>
         </div>
-        <div className="mt-3 md:col-span-6 xl:col-span-5">
-          <img className="m-auto" src={data.image[0]} alt="website logo"/>
-        </div>
+        {addImage(data.image[0])}
       </div>
     )
   });
