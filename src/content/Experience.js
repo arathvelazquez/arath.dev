@@ -64,7 +64,7 @@ const Experience = () => {
             {data.period}
           </div>
           <div className="md:inline hidden">
-            {software(data.stack)}
+            {/* {software(data.stack)} */}
           </div>
           <p className="text-sm mt-4 md:text-justify" dangerouslySetInnerHTML={{ __html: data.description }}></p>
         </div>

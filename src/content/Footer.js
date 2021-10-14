@@ -10,7 +10,7 @@ const Footer = () => {
           Arath Fabricio
         </span>
         Web Developer
-        <Button />
+        {/* <Button /> */}
         <div className="m-auto w-10/12 mt-4 flex justify-around text-xl">
           <a target="tab" href="https://www.linkedin.com/in/arathvelazquez/"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a>
           <a target="tab" href="https://www.twitter.com/arathvelazquez"><FontAwesomeIcon icon={['fab', 'twitter']} /></a>

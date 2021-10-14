@@ -11,7 +11,7 @@ class Banner extends Component {
           <div className="text-white uppercase text-6xl sm:text-main-title font-extrabold leading-none">Arath Fabricio</div>
           <Underline />
           <div className="text-white font-main-title">I'm a Web developer</div>
-          <Button />
+          {/* <Button /> */}
         </div>
       </div>
     )
