@@ -1,4 +1,4 @@
-import Button from '../components/Button';
+import { Button } from '../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {

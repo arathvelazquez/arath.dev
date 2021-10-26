@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Button from '../components/Button';
+import { Button } from '../components/Button';
 import Underline from '../components/Underline';
 
 class Banner extends Component {

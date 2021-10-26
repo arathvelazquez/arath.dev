@@ -9,6 +9,20 @@ class Button extends Component {
       </div>
     )
   }
+};
+
+class CommonButton extends Component {
+  
+  render() {
+    return (
+      <div className="flex mt-3">
+        <a href={this.props.link} target="tab" className="m-auto mb-20 border-2 text-white hover:text-white hover:border-black hover:border-primary bg-black font-extrabold uppercase p-2 text-sm outline-none">{this.props.title}</a>
+      </div>
+    )
+  }
 }
 
-export default Button;
+export {
+  Button,
+  CommonButton
+};

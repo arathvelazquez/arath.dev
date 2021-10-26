@@ -4,8 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#FCA311',
-        'secondary': '#14213D'
+        'primary': '#ed9b40', // orange
+        'secondary': '#2274a5', // blue
+        'tertiary': '#57a773', // green
+        'powder': '#fdfdfd' // white
+      },
+      height: {
+        xxl: '540px',
+      },
+      borderWidth: {
+        '14': '14px',
       },
       fontFamily: {
         'main-title': ['Poppins']

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { experience } from '../data/experience';
 import Technology from '../components/Technology';
-import { faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { CommonButton } from '../components/Button';
 
 const Experience = () => {
 
@@ -10,8 +10,8 @@ const Experience = () => {
   const addImage = (image) => {
     if (image) {
       return (
-        <div className="mt-3 md:col-span-6 xl:col-span-5">
-          <img className="m-auto" src={image} alt="website logo"/>
+        <div className=" border-14 rounded-xl border-black mt-6 mb-20 m-auto md:col-span-6 xl:col-span-5 h-xxl w-4/5 relative overflow-hidden overflow-x-auto overflow-y-auto">
+          <img className="m-auto relative" src={image} alt="website logo"/>
         </div>
       )
     }
@@ -47,11 +47,14 @@ const Experience = () => {
     } else {
       return data.category.includes(search);
     }
+  }).filter(data => {
+    // return only full ones.
+    return data.full;
   }).map((data, key) => {
     return (
-      <div key={key} className="m-auto w-10/12 mb-12 text-center md:grid md:grid-cols-12 md:gap-4 md:text-left">
+      <div key={key} className={`${data.full ? "mt-10" : "mt-12 mb-12"} m-auto w-10/12 text-center md:grid md:grid-cols-12 md:gap-4 md:text-left`}>
         <div className={data.image[0] ? "md:col-start-1 md:col-end-7 xl:col-end-8" : "md:col-start-1 md:col-end-12"}>
-          <div className="m-auto text-black text-2xl block uppercase font-extrabold">
+          <div className={`${data.full ? "mt-36" : ""} m-auto text-black text-2xl block uppercase font-extrabold`}>
             {data.companyName}
           </div>
           <div className="m-auto text-primary text-sm block">
@@ -76,15 +79,28 @@ const Experience = () => {
   return (
     <div>
       <div className="w-full flex justify-between text-center mb-16">
-      <ul className="m-auto text-sm font-12 text-black uppercase">
-        <li className={search === 'professional' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('professional'); e.preventDefault();}}>Professional</a></li>
-        <li className={search === 'freelance' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('freelance'); e.preventDefault();}}>Freelance</a></li>
-        <li className={search === 'entrepreneur' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('entrepreneur'); e.preventDefault();}}>Entrepreneur</a></li>
-        <li className={search === 'just_for_fun' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('just_for_fun'); e.preventDefault();}}>Just for Fun</a></li>
-        <li className={search === 'concepts' ? 'inline-block px-5 shadow-link focus:outline-none' : 'inline-block px-5 focus:outline-none'}><a href="#" className="hover:shadow-link" onClick={(e)=> {setSearch('concepts'); e.preventDefault();}}>Concepts</a></li>
-      </ul>
-    </div>
+        <ul className="m-auto text-sm font-12 text-black uppercase">
+          <li className={`${search === 'professional' ? "shadow-link" : ""} inline-block px-5 focus:outline-none`}>
+            <a href="/" className="hover:shadow-link" onClick={(e)=> {setSearch('professional'); e.preventDefault();}}>Professional</a>
+          </li>
+          <li className={`${search === 'freelance' ? "shadow-link" : ""} inline-block px-5 focus:outline-none`}>
+            <a href="/" className="hover:shadow-link" onClick={(e)=> {setSearch('freelance'); e.preventDefault();}}>Freelance</a>
+          </li>
+          <li className={`${search === 'entrepreneur' ? "shadow-link" : ""} inline-block px-5 focus:outline-none`}>
+            <a href="/" className="hover:shadow-link" onClick={(e)=> {setSearch('entrepreneur'); e.preventDefault();}}>Entrepreneur</a>
+          </li>
+          <li className={`${search === 'just_for_fun' ? "shadow-link" : ""} inline-block px-5 focus:outline-none`}>
+            <a href="/" className="hover:shadow-link" onClick={(e)=> {setSearch('just_for_fun'); e.preventDefault();}}>Just for Fun</a>
+          </li>
+          <li className={`${search === 'concepts' ? "shadow-link" : ""} inline-block px-5 focus:outline-none`}>
+            <a href="/" className="hover:shadow-link" onClick={(e)=> {setSearch('concepts'); e.preventDefault();}}>Concepts</a>
+          </li>
+        </ul>
+      </div>
       {jobs}
+      <div>
+        {/* <CommonButton title="See all experience" link="/experience"/> */}
+      </div>
     </div>
   )
 }

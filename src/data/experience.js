@@ -1,47 +1,70 @@
 export const experience = [
   {
-    companyName: 'Columbia',
+    companyName: 'NBCUniversal',
+    full: true,
     webPage: {
-      url: 'https://columbia.com'
+      url: 'https://www.nbcuniversal.com/',
+      logo: 'logos/nbcuniversal.jpeg'
+    },
+    location: 'Englewood Cliffs, NJ USA',
+    category: ['professional'],
+    role: 'AWS Backend Developer',
+    stack: ['Node.js', 'AWS Lambda', 'AWS S3', 'AWS CloudFormation', 'AWS Dynamo', 'AWS Kinesis'],
+    image: ['experience/nbcuniversal-page.png'],
+    period: 'May 2021 - Present',
+    description: 'Working with Microservices architecture. Node.js and AWS resources such as Lambda, DynamoDB, S3, CloudWatch, Kinesis, SNS and SQS.'
+  },
+  {
+    companyName: 'Columbia',
+    full: true,
+    webPage: {
+      url: 'https://columbia.com',
+      logo: 'logos/columbia.jpeg'
     },
     location: 'Portland, OR USA',
     category: ['professional'],
     role: 'Fullstack Dev & AWS Tech Lead',
     stack: ['Node.js', 'AWS Lambda', 'AWS S3', 'AWS CloudFormation', 'AWS Dynamo', 'React.js', 'OKTA'],
-    image: ['experience/columbia_front.png'],
-    period: 'Dec 2018 - Present',
+    image: ['experience/columbia-page.png'],
+    period: 'Dec 2018 - May 2021',
     description: 'Accountable for implementation of microservices and RESTful APIs running in AWS with Lambda (Node.js), Dynamo, S3, CloudWatch, CloudFormation, SES, JWT, OKTA, Swagger and MongoDB (Atlas). <br /> Most recently, I have been involved in all the aspects of development and also provide production support, analysis, feature enhancements, mentoring, unit testing and code reviews. <br /> As Tech Lead, I work closely with the entire AWS team, Architects, Product Owners, Business Analysts, DevOps and SFCC team to integrate our endpoints, jobs and tasks'
   },
   {
     companyName: 'MediaHunter',
+    full: true,
     webPage: {
-      url: 'https://mediahunter.mx'
+      url: 'https://mediahunter.mx',
+      logo: 'logos/mediahunter.jpeg'
     },
     location: 'Jalisco, MX',
     category: ['professional', 'freelance', 'entrepreneur'],
     role: 'Partner & Fullstack Developer',
     stack: ['Node.js', 'MongoDB', 'Angular', 'Elastic Search', 'Express.js', 'E-Commerce', 'Digital Ocean', 'Material Design', 'Mandrill'],
-    image: ['experience/mediahunter_front.png'],
+    image: ['experience/mediahunter-page.png'],
     period: 'Dec 2014 - Present',
     description: 'During this period, I worked for two different companies as freelance and then I started working fulltime for one of these. I was the main developer for a startup called MediaHunter and also I was working remotely as Node.js (MEAN) developer for a company based on Seattle and in February 2018 I started working fulltime with them. <br /> For both companies, I performed most of the development and created Ecommerce platforms with Node.js, Angular, Bootstrap, Material Design, ElasticSearch and MongoDB. I also performed all the implementation for database and web servers by using independent VPS and did the integration of different services and API\'s such as Google Maps, Mandrill for transactional emails, DigitalOcean, Google Cloud among others.'
   },
   {
-    companyName: 'iTexico',
+    companyName: 'iTexico (now improving.com)',
+    full: true,
     webPage: {
-      url: 'https://itexico.com'
+      url: 'https://itexico.com',
+      logo: 'logos/improving.jpeg'
     },
     location: 'Jalisco, MX',
     category: ['professional'],
     role: 'Fullstack Developer',
     stack: ['Node.js', 'AWS', 'MongoDB', 'React.js', 'HTML & CSS', 'Express'],
-    image: ['experience/itexico_front.png'],
+    image: ['experience/itexico-page.png'],
     period: 'Oct 2017 - Feb 2018',
     description: 'Worked as Full Stack for MediaShift (AdTech Platform Solution) to create a dashboard by using Mongo, Node.js and React.js stack.'
   },
   {
     companyName: 'Global Hitss',
+    full: false,
     webPage: {
-      url: 'https://globalhitss.com/'
+      url: 'https://globalhitss.com/',
+      logo: 'logos/globalhitss.jpeg'
     },
     location: 'Jalisco, MX',
     category: ['professional'],
@@ -53,8 +76,10 @@ export const experience = [
   },
   {
     companyName: 'TCS',
+    full: false,
     webPage: {
-      url: 'https://www.tcs.com/worldwide'
+      url: 'https://www.tcs.com/worldwide',
+      logo: 'logos/tcs.jpeg'
     },
     location: 'Jalisco, MX',
     category: ['professional'],
@@ -66,8 +91,10 @@ export const experience = [
   },
   {
     companyName: 'Infosys',
+    full: false,
     webPage: {
-      url: 'https://www.infosys.com/'
+      url: 'https://www.infosys.com/',
+      logo: 'logos/infosys.jpeg'
     },
     location: 'Nuevo León, MX',
     category: ['professional'],
@@ -79,8 +106,10 @@ export const experience = [
   },
   {
     companyName: 'Dextra Technologies',
+    full: false,
     webPage: {
-      url: 'https://dextratech.com/'
+      url: 'https://dextratech.com/',
+      logo: 'logos/dextra_2.jpeg'
     },
     location: 'Nuevo León, MX',
     category: ['professional'],
@@ -92,8 +121,10 @@ export const experience = [
   },
   {
     companyName: 'IBM',
+    full: false,
     webPage: {
-      url: 'https://www.ibm.com/mx-es'
+      url: 'https://www.ibm.com/mx-es',
+      logo: 'logos/ibm.jpeg'
     },
     location: 'Jalisco, MX',
     category: ['professional'],
@@ -105,8 +136,10 @@ export const experience = [
   },
   {
     companyName: 'MeediaHub',
+    full: false,
     webPage: {
-      url: ''
+      url: '',
+      logo: 'logos/meediahub.png'
     },
     category: ['entrepreneur', 'concepts'],
     role: 'Founder and Software Developer',
@@ -117,13 +150,14 @@ export const experience = [
   },
   {
     companyName: 'Wordpress Plugins & Chrome Extensions',
+    full: false,
     webPage: {
       url: 'https://chrome.google.com/webstore/detail/url-shortener-ushmx/nmodcgfljdebfnafgaeefglhcngpdjlj?hl=en&authuser=1'
     },
     category: ['concepts', 'just_for_fun', 'freelance'],
     role: 'Software Developer',
     stack: ['PHP', 'Javascript', 'SQL', 'HTML & CSS'],
-    image: ['experience/ush.mx_1.png'],
+    image: [],
     period: '2011 - 2012 [Shut down]',
     description: 'Created some plugins for Wordpress and some chrome extensions.  for a service I created called ush.mx (URL shortener)'
   }
