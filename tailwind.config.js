@@ -10,7 +10,8 @@ module.exports = {
         'powder': '#fdfdfd' // white
       },
       height: {
-        xxl: '540px',
+        sm: '450px',
+        xl: '550px',
       },
       borderWidth: {
         '14': '14px',

@@ -5,12 +5,13 @@ import { CommonButton } from '../components/Button';
 
 const Experience = () => {
 
-  const [search, setSearch] = useState(0);
+  const [search, setSearch] = useState('hideContent');
+  const states = ['hideContent', 'showContent'];
 
   const addImage = (image) => {
     if (image) {
       return (
-        <div className=" border-14 rounded-xl border-black mt-6 mb-20 m-auto md:col-span-6 xl:col-span-5 h-xxl w-4/5 relative overflow-hidden overflow-x-auto overflow-y-auto">
+        <div className=" border-14 rounded-xl border-black mt-6 mb-20 m-auto md:col-span-6 xl:col-span-5 md:h-xl h-sm w-4/5 relative overflow-hidden overflow-x-auto overflow-y-auto">
           <img className="m-auto relative" src={image} alt="website logo"/>
         </div>
       )
@@ -42,19 +43,17 @@ const Experience = () => {
   }
 
   const jobs = experience.filter(data => {
-    if (search === 0) {
+    if (search === 'showContent') {
       return data;
-    } else {
-      return data.category.includes(search);
+    } else if (search === 'hideContent') {
+      return data.fullContent;
     }
-  }).filter(data => {
-    // return only full ones.
-    return data.full;
+    return data.category.includes(search);
   }).map((data, key) => {
     return (
-      <div key={key} className={`${data.full ? "mt-10" : "mt-12 mb-12"} m-auto w-10/12 text-center md:grid md:grid-cols-12 md:gap-4 md:text-left`}>
+      <div key={key} className={`${data.fullContent ? "mt-14" : "-mt-4 mb-12"} m-auto w-10/12 text-center md:grid md:grid-cols-12 md:gap-4 md:text-left`}>
         <div className={data.image[0] ? "md:col-start-1 md:col-end-7 xl:col-end-8" : "md:col-start-1 md:col-end-12"}>
-          <div className={`${data.full ? "mt-36" : ""} m-auto text-black text-2xl block uppercase font-extrabold`}>
+          <div className={`${data.fullContent ? "mt-36" : ""} m-auto text-black text-2xl block uppercase font-extrabold`}>
             {data.companyName}
           </div>
           <div className="m-auto text-primary text-sm block">
@@ -80,6 +79,9 @@ const Experience = () => {
     <div>
       <div className="w-full flex justify-between text-center mb-16">
         <ul className="m-auto text-sm font-12 text-black uppercase">
+          <li className={`${states.includes(search) ? "shadow-link" : ""} inline-block px-5 focus:outline-none`}>
+            <a href="/" className="hover:shadow-link" onClick={(e)=> {setSearch('hideContent'); e.preventDefault();}}>All</a>
+          </li>
           <li className={`${search === 'professional' ? "shadow-link" : ""} inline-block px-5 focus:outline-none`}>
             <a href="/" className="hover:shadow-link" onClick={(e)=> {setSearch('professional'); e.preventDefault();}}>Professional</a>
           </li>
@@ -98,8 +100,9 @@ const Experience = () => {
         </ul>
       </div>
       {jobs}
-      <div>
-        {/* <CommonButton title="See all experience" link="/experience"/> */}
+      <div className="flex mt-3">
+        <a href="/" className={`${search === 'hideContent' ? "block" : "hidden"} m-auto mb-20 border-2 text-white hover:text-white hover:border-primary bg-black font-extrabold uppercase p-2 text-sm outline-none`} onClick={(e)=> {setSearch('showContent'); e.preventDefault();}}>See all experience</a>
+        <a href="/" className={`${search === 'showContent' ? "block" : "hidden"} m-auto mb-20 border-2 text-white hover:text-white hover:border-primary bg-black font-extrabold uppercase p-2 text-sm outline-none`} onClick={(e)=> {setSearch('hideContent'); e.preventDefault();}}>Hide experience</a>
       </div>
     </div>
   )

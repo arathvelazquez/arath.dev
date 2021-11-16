@@ -1,7 +1,7 @@
 export const experience = [
   {
     companyName: 'NBCUniversal',
-    full: true,
+    fullContent: true,
     webPage: {
       url: 'https://www.nbcuniversal.com/',
       logo: 'logos/nbcuniversal.jpeg'
@@ -16,7 +16,7 @@ export const experience = [
   },
   {
     companyName: 'Columbia',
-    full: true,
+    fullContent: true,
     webPage: {
       url: 'https://columbia.com',
       logo: 'logos/columbia.jpeg'
@@ -31,7 +31,7 @@ export const experience = [
   },
   {
     companyName: 'MediaHunter',
-    full: true,
+    fullContent: true,
     webPage: {
       url: 'https://mediahunter.mx',
       logo: 'logos/mediahunter.jpeg'
@@ -46,7 +46,7 @@ export const experience = [
   },
   {
     companyName: 'iTexico (now improving.com)',
-    full: true,
+    fullContent: true,
     webPage: {
       url: 'https://itexico.com',
       logo: 'logos/improving.jpeg'
@@ -61,7 +61,7 @@ export const experience = [
   },
   {
     companyName: 'Global Hitss',
-    full: false,
+    fullContent: false,
     webPage: {
       url: 'https://globalhitss.com/',
       logo: 'logos/globalhitss.jpeg'
@@ -76,7 +76,7 @@ export const experience = [
   },
   {
     companyName: 'TCS',
-    full: false,
+    fullContent: false,
     webPage: {
       url: 'https://www.tcs.com/worldwide',
       logo: 'logos/tcs.jpeg'
@@ -91,7 +91,7 @@ export const experience = [
   },
   {
     companyName: 'Infosys',
-    full: false,
+    fullContent: false,
     webPage: {
       url: 'https://www.infosys.com/',
       logo: 'logos/infosys.jpeg'
@@ -106,7 +106,7 @@ export const experience = [
   },
   {
     companyName: 'Dextra Technologies',
-    full: false,
+    fullContent: false,
     webPage: {
       url: 'https://dextratech.com/',
       logo: 'logos/dextra_2.jpeg'
@@ -121,7 +121,7 @@ export const experience = [
   },
   {
     companyName: 'IBM',
-    full: false,
+    fullContent: false,
     webPage: {
       url: 'https://www.ibm.com/mx-es',
       logo: 'logos/ibm.jpeg'
@@ -136,7 +136,7 @@ export const experience = [
   },
   {
     companyName: 'MeediaHub',
-    full: false,
+    fullContent: false,
     webPage: {
       url: '',
       logo: 'logos/meediahub.png'
@@ -144,13 +144,14 @@ export const experience = [
     category: ['entrepreneur', 'concepts'],
     role: 'Founder and Software Developer',
     stack: ['Node.js', 'MongoDB', 'Javascript', 'HTML5 & CSS3', 'D3.js', 'jQuery'],
+    image_: ['experience/meediahub-page.png'],
     image: [],
     period: 'Jul 2015 - 2017 [Shut down]',
     description: ''
   },
   {
     companyName: 'Wordpress Plugins & Chrome Extensions',
-    full: false,
+    fullContent: false,
     webPage: {
       url: 'https://chrome.google.com/webstore/detail/url-shortener-ushmx/nmodcgfljdebfnafgaeefglhcngpdjlj?hl=en&authuser=1'
     },
