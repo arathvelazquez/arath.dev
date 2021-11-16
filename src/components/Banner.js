@@ -10,7 +10,7 @@ class Banner extends Component {
         <div className="m-auto w-2/3 md:w-5/12 text-center">
           <div className="text-white uppercase text-6xl sm:text-main-title font-extrabold leading-none">Arath Fabricio</div>
           <Underline />
-          <div className="text-white font-main-title">I'm a Web developer</div>
+          <div className="text-white font-main-title">Web Developer</div>
           {/* <Button /> */}
         </div>
       </div>
