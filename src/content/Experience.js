@@ -59,7 +59,7 @@ const Experience = () => {
           <div className="m-auto text-primary text-sm block">
             {data.role}
           </div>
-          <div className="text-xs">
+          <div className="text-sm">
             {data.location}
           </div>
           <div className="text-xs">
