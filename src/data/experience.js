@@ -10,7 +10,7 @@ export const experience = [
     category: ['professional', 'entrepreneur'],
     role: 'Founder & Fullstack Developer',
     stack: ['Next.js', 'React', 'Node.js', 'MongoDB', 'AWS Lambda', 'AWS S3', 'AWS SQS', 'Stripe'],
-    image: ['experience/caargo-page.png'],
+    image: ['experience/caargo-page.webp'],
     period: 'Nov 2024 - Present',
     description: 'SaaS platform for trucking and logistics companies in Mexico to manage container maneuvers, invoicing and profitability from a single place. <br /> Built the entire product end to end with Next.js, Node.js and MongoDB, running on AWS (Lambda, S3, SQS). Features include electronic invoicing (CFDI 4.0 with Carta Porte), real-time GPS tracking, automated WhatsApp notifications, maintenance and expense tracking per unit, and subscription billing with Stripe.'
   },
@@ -25,7 +25,7 @@ export const experience = [
     category: ['professional'],
     role: 'AWS Backend Developer',
     stack: ['Node.js', 'AWS Lambda', 'AWS S3', 'AWS CloudFormation', 'AWS DynamoDB', 'AWS Kinesis'],
-    image: ['experience/nbcuniversal-page.png'],
+    image: ['experience/nbcuniversal-page.webp'],
     period: 'May 2021 - Present',
     description: 'Working with Microservices architecture. Node.js and AWS resources such as Lambda, DynamoDB, S3, CloudWatch, Kinesis, SNS and SQS.'
   },
@@ -40,7 +40,7 @@ export const experience = [
     category: ['professional'],
     role: 'Fullstack Dev & AWS Tech Lead',
     stack: ['Node.js', 'AWS Lambda', 'AWS S3', 'AWS CloudFormation', 'AWS DynamoDB', 'React.js', 'Okta'],
-    image: ['experience/columbia-page.png'],
+    image: ['experience/columbia-page.webp'],
     period: 'Dec 2018 - May 2021',
     description: 'Accountable for implementation of microservices and RESTful APIs running in AWS with Lambda (Node.js), DynamoDB, S3, CloudWatch, CloudFormation, SES, JWT, Okta, Swagger and MongoDB (Atlas). <br /> Most recently, I have been involved in all the aspects of development and also provide production support, analysis, feature enhancements, mentoring, unit testing and code reviews. <br /> As Tech Lead, I work closely with the entire AWS team, Architects, Product Owners, Business Analysts, DevOps and SFCC team to integrate our endpoints, jobs and tasks'
   },
@@ -55,7 +55,7 @@ export const experience = [
     category: ['professional', 'freelance', 'entrepreneur'],
     role: 'Partner & Fullstack Developer',
     stack: ['Node.js', 'MongoDB', 'Angular', 'Elasticsearch', 'Express.js', 'E-Commerce', 'DigitalOcean', 'Material Design', 'Mandrill'],
-    image: ['experience/mediahunter-page.png'],
+    image: ['experience/mediahunter-page.webp'],
     period: 'Dec 2014 - Present',
     description: 'During this period, I worked for two different companies as freelance and then I started working fulltime for one of these. I was the main developer for a startup called MediaHunter and also I was working remotely as Node.js (MEAN) developer for a company based on Seattle and in February 2018 I started working fulltime with them. <br /> For both companies, I performed most of the development and created Ecommerce platforms with Node.js, Angular, Bootstrap, Material Design, Elasticsearch and MongoDB. I also performed all the implementation for database and web servers by using independent VPS and did the integration of different services and APIs such as Google Maps, Mandrill for transactional emails, DigitalOcean, Google Cloud among others.'
   },
@@ -70,7 +70,7 @@ export const experience = [
     category: ['professional'],
     role: 'Fullstack Developer',
     stack: ['Node.js', 'AWS', 'MongoDB', 'React.js', 'HTML & CSS', 'Express'],
-    image: ['experience/itexico-page.png'],
+    image: ['experience/itexico-page.webp'],
     period: 'Oct 2017 - Feb 2018',
     description: 'Worked as Full Stack for MediaShift (AdTech Platform Solution) to create a dashboard by using MongoDB, Node.js and React.js stack.'
   },
