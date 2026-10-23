@@ -13,13 +13,17 @@ npm run build    # production build into build/
 npm run preview  # serve build/ locally
 ```
 
-Note: `~/.npmrc` has `os = "linux"`, which makes npm skip the macOS native binaries Vite needs. Install with `npm install --os=darwin` on this machine.
+Styles use Tailwind CSS 4; the theme (colors, fonts, breakpoints) lives in `src/index.css` under `@theme`.
+
+Note: `~/.npmrc` has `os = "linux"`, which makes npm skip the macOS native binaries Vite and Tailwind need. The project `.npmrc` overrides it with `os=darwin`.
+
+Files that are not published live in `private/` with the same path they had under `public/` (unused screenshots, logos, the AV avatar). `private/FS_ArathVelazquez_CV.pdf` is ignored by git.
 
 ## Deployment
 
 `npm run deploy` builds the site and then:
 
-1. Syncs `build/` to the `s3://arath.dev` bucket (needs AWS CLI credentials).
+1. Syncs `build/` to the `s3://arath.dev` bucket, skipping `.DS_Store` files (needs AWS CLI credentials).
 2. Invalidates `/*` in CloudFront (distribution `E1X45QNA77TKIT`, alias `arath.dev`). `www.arath.dev` is a separate bucket/distribution that redirects to `arath.dev`.
 3. Publishes `build/` to the `master` branch of `arathvelazquez.github.io` with gh-pages.
 

@@ -1,3 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ed9b40; /* orange */
+  --color-secondary: #2274a5; /* blue */
+  --color-tertiary: #57a773; /* green */
+  --color-powder: #fdfdfd; /* white */
+  /* Keep Tailwind 3's gray-200 (v4 switched its palette to OKLCH) */
+  --color-gray-200: #e5e7eb;
+
+  --font-main-title: Poppins;
+  --text-main-title: 72px;
+
+  --breakpoint-xs: 475px;
+
+  --shadow-link: 0 -2px 0 0 rgb(252, 163, 17) inset;
+}

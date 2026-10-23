@@ -7,7 +7,7 @@ const Title = (props) => {
       <div className="m-auto text-center">
         <a href={'#' + props.section} className="font-extrabold uppercase text-xl">{props.title}</a>
         <Underline />
-        <span className="-z-10 uppercase text-gray-200 text-6xl sm:text-main-title font-extrabold relative -top-16">{props.subtitle}</span>
+        <span className="-z-10 uppercase text-gray-200 text-5xl xs:text-6xl sm:text-main-title font-extrabold relative -top-16">{props.subtitle}</span>
       </div>
     </div>
   )

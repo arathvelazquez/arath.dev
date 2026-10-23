@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 ngrok
+
+# private/ holds files kept out of the published site; only the CV stays out of git
+/private/FS_ArathVelazquez_CV.pdf
