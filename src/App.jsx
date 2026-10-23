@@ -6,11 +6,11 @@ import SubMenu from './components/SubMenu';
 import Experience from './content/Experience'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import './App.css';
 
-library.add(fab)
+library.add(faLinkedin, faTwitter, faGithub)
 
 function App() {
   return (

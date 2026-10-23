@@ -8,7 +8,7 @@ class Banner extends Component {
     return (
       <div className="h-96 bg-black flex">
         <div className="m-auto w-2/3 md:w-5/12 text-center">
-          <div className="text-white uppercase text-6xl sm:text-main-title font-extrabold leading-none">Arath Fabricio</div>
+          <div className="text-white uppercase text-6xl sm:text-main-title font-extrabold leading-none">Arath Velázquez</div>
           <Underline />
           <div className="text-white font-main-title">Web Developer</div>
           {/* <Button /> */}

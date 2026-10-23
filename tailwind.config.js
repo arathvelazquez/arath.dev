@@ -1,6 +1,6 @@
-module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
@@ -28,14 +28,7 @@ module.exports = {
       boxShadow: {
         link: '0 -2px 0 0 rgb(252, 163, 17) inset',
       },
-      zIndex: {
-        '-10': '-10',
-        '-20': '-20',
-       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

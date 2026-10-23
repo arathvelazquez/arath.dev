@@ -1,4 +1,3 @@
-import React from 'react-dom';
 import Underline from '../components/Underline';
 
 const Title = (props) => {

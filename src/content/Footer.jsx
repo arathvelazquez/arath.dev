@@ -7,7 +7,7 @@ const Footer = () => {
     <footer id="footer" className="w-full flex h-full bottom-0 text-gray-200 bg-black">
       <div className="m-auto mt-10 mb-10 text-center">
         <span className="font-extrabold uppercase block">
-          Arath Fabricio
+          Arath Velázquez
         </span>
         Web Developer
         {/* <Button /> */}
