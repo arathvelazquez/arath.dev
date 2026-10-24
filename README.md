@@ -23,8 +23,8 @@ Files that are not published live in `private/` with the same path they had unde
 
 `npm run deploy` builds the site and then:
 
-1. Syncs `build/` to the `s3://arath.dev` bucket, skipping `.DS_Store` files (needs AWS CLI credentials).
-2. Invalidates `/*` in CloudFront (distribution `E1X45QNA77TKIT`, alias `arath.dev`). `www.arath.dev` is a separate bucket/distribution that redirects to `arath.dev`.
+1. Syncs `build/` to the `s3://arath.dev` bucket with `--delete`, so files no longer in `build/` are removed. `shared/` (the CV) and `.DS_Store` files are excluded. Uses the `default` AWS CLI profile.
+2. Invalidates `/*` in CloudFront (also with the `default` profile) (distribution `E1X45QNA77TKIT`, alias `arath.dev`). `www.arath.dev` is a separate bucket/distribution that redirects to `arath.dev`.
 3. Publishes `build/` to the `master` branch of `arathvelazquez.github.io` with gh-pages.
 
 To update git repository: git push webpage
