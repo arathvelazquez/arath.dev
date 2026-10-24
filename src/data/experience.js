@@ -8,11 +8,11 @@ export const experience = [
     },
     location: 'Manzanillo, Colima MX',
     category: ['professional', 'entrepreneur'],
-    role: 'Founder & Fullstack Developer',
+    role: 'Founder & Full Stack Developer',
     stack: ['Next.js', 'React', 'Node.js', 'MongoDB', 'AWS Lambda', 'AWS S3', 'AWS SQS', 'Stripe'],
     image: ['experience/caargo-page.webp'],
     period: 'Nov 2024 - Present',
-    description: 'SaaS platform for trucking and logistics companies in Mexico to manage container maneuvers, invoicing and profitability from a single place. <br /> Built the entire product end to end with Next.js, Node.js and MongoDB, running on AWS (Lambda, S3, SQS). Features include electronic invoicing (CFDI 4.0 with Carta Porte), real-time GPS tracking, automated WhatsApp notifications, maintenance and expense tracking per unit, and subscription billing with Stripe.'
+    description: 'SaaS platform for trucking and logistics companies in Mexico to manage container moves, invoicing and profitability from a single place. <br /> Built the entire product end to end with Next.js, Node.js and MongoDB, running on AWS (Lambda, S3, SQS). Features include electronic invoicing (CFDI 4.0 with Carta Porte), real-time GPS tracking, automated WhatsApp notifications, maintenance and expense tracking per truck, and subscription billing with Stripe.'
   },
   {
     companyName: 'NBCUniversal',
@@ -27,7 +27,7 @@ export const experience = [
     stack: ['Node.js', 'AWS Lambda', 'AWS S3', 'AWS CloudFormation', 'AWS DynamoDB', 'AWS Kinesis'],
     image: ['experience/nbcuniversal-page.webp'],
     period: 'May 2021 - Present',
-    description: 'Working with Microservices architecture. Node.js and AWS resources such as Lambda, DynamoDB, S3, CloudWatch, Kinesis, SNS and SQS.'
+    description: 'Building microservices with Node.js and AWS services such as Lambda, DynamoDB, S3, CloudWatch, Kinesis, SNS and SQS.'
   },
   {
     companyName: 'Columbia',
@@ -38,11 +38,11 @@ export const experience = [
     },
     location: 'Portland, OR USA',
     category: ['professional'],
-    role: 'Fullstack Dev & AWS Tech Lead',
+    role: 'Full Stack Developer & AWS Tech Lead',
     stack: ['Node.js', 'AWS Lambda', 'AWS S3', 'AWS CloudFormation', 'AWS DynamoDB', 'React.js', 'Okta'],
     image: ['experience/columbia-page.webp'],
     period: 'Dec 2018 - May 2021',
-    description: 'Accountable for implementation of microservices and RESTful APIs running in AWS with Lambda (Node.js), DynamoDB, S3, CloudWatch, CloudFormation, SES, JWT, Okta, Swagger and MongoDB (Atlas). <br /> Most recently, I have been involved in all the aspects of development and also provide production support, analysis, feature enhancements, mentoring, unit testing and code reviews. <br /> As Tech Lead, I work closely with the entire AWS team, Architects, Product Owners, Business Analysts, DevOps and SFCC team to integrate our endpoints, jobs and tasks'
+    description: 'Responsible for implementing microservices and RESTful APIs on AWS with Lambda (Node.js), DynamoDB, S3, CloudWatch, CloudFormation, SES, JWT, Okta, Swagger and MongoDB (Atlas). <br /> I was involved in all aspects of development and also provided production support, analysis, feature enhancements, mentoring, unit testing and code reviews. <br /> As Tech Lead, I worked closely with the AWS team, architects, product owners, business analysts, DevOps and the SFCC team to integrate our endpoints, jobs and tasks.'
   },
   {
     companyName: 'MediaHunter',
@@ -53,14 +53,14 @@ export const experience = [
     },
     location: 'Jalisco, MX',
     category: ['professional', 'freelance', 'entrepreneur'],
-    role: 'Partner & Fullstack Developer',
+    role: 'Partner & Full Stack Developer',
     stack: ['Node.js', 'MongoDB', 'Angular', 'Elasticsearch', 'Express.js', 'E-Commerce', 'DigitalOcean', 'Material Design', 'Mandrill'],
     image: ['experience/mediahunter-page.webp'],
     period: 'Dec 2014 - Present',
-    description: 'During this period, I worked for two different companies as freelance and then I started working fulltime for one of these. I was the main developer for a startup called MediaHunter and also I was working remotely as Node.js (MEAN) developer for a company based on Seattle and in February 2018 I started working fulltime with them. <br /> For both companies, I performed most of the development and created Ecommerce platforms with Node.js, Angular, Bootstrap, Material Design, Elasticsearch and MongoDB. I also performed all the implementation for database and web servers by using independent VPS and did the integration of different services and APIs such as Google Maps, Mandrill for transactional emails, DigitalOcean, Google Cloud among others.'
+    description: 'I was the main developer for MediaHunter, a startup, while also working remotely as a Node.js (MEAN) developer for a Seattle-based company, which I joined full-time in February 2018. <br /> For both companies, I did most of the development and built e-commerce platforms with Node.js, Angular, Bootstrap, Material Design, Elasticsearch and MongoDB. I also set up the database and web servers on VPS instances and integrated services and APIs such as Google Maps, Mandrill (transactional email), DigitalOcean and Google Cloud. <br /> Today, as a partner, I lead the development of MediaHunter\'s platform for outdoor advertising, which connects advertisers with billboard providers across Mexico.'
   },
   {
-    companyName: 'iTexico (now improving.com)',
+    companyName: 'iTexico (now Improving)',
     fullContent: true,
     webPage: {
       url: 'https://itexico.com',
@@ -68,11 +68,11 @@ export const experience = [
     },
     location: 'Jalisco, MX',
     category: ['professional'],
-    role: 'Fullstack Developer',
+    role: 'Full Stack Developer',
     stack: ['Node.js', 'AWS', 'MongoDB', 'React.js', 'HTML & CSS', 'Express'],
     image: ['experience/itexico-page.webp'],
     period: 'Oct 2017 - Feb 2018',
-    description: 'Worked as Full Stack for MediaShift (AdTech Platform Solution) to create a dashboard by using MongoDB, Node.js and React.js stack.'
+    description: 'Worked as a full stack developer for <strong>MediaShift</strong>, an ad tech platform, building a dashboard with MongoDB, Node.js and React.'
   },
   {
     companyName: 'Global Hitss',
@@ -87,7 +87,7 @@ export const experience = [
     stack: ['Shell Scripting', 'Node.js', 'Express.js', 'MongoDB', 'Google Maps API', 'Splunk'],
     image: [],
     period: 'Aug 2012 - Oct 2017',
-    description: 'Worked for 2 accounts during this time. For DexOne, I was involved in development for DexKnows and third parties services integration such Google Maps, OpenTable, among other APIs. Worked for the first time with MongoDB only for comments section and also first time with Splunk and Apache Solr. For AT&T, I was part of the data team and worked for backend services and internal tools.'
+    description: 'Worked on two accounts. For <strong>DexOne</strong>, I developed features for DexKnows and third-party integrations such as Google Maps, OpenTable and other APIs. It was my first time working with MongoDB (for the comments section), Splunk and Apache Solr. For <strong>AT&T</strong>, I was part of the data team and worked on backend services and internal tools.'
   },
   {
     companyName: 'TCS',
@@ -102,7 +102,7 @@ export const experience = [
     stack: ['Shell Scripting', 'Java', 'WebSphere',],
     image: [],
     period: 'Jul 2011 - Aug 2012',
-    description: 'Worked as Unix Developer for <strong>Bank of America</strong>. <br /> Application development and support for backend, data migration and infrastructure. Working mainly with shell scripting, WebSphere and created internal applications.'
+    description: 'Worked as a Unix developer for <strong>Bank of America</strong>. <br /> Developed and supported backend applications, data migrations and infrastructure, mainly with shell scripting and WebSphere. I also built internal applications.'
   },
   {
     companyName: 'Infosys',
@@ -117,7 +117,7 @@ export const experience = [
     stack: ['Shell Scripting', 'Configuration Management'],
     image: [],
     period: 'Oct 2010 - Jul 2011',
-    description: 'Worked for Nordstrom account providing application development mostly for Unix tools and support.'
+    description: 'Worked on the <strong>Nordstrom</strong> account, developing and supporting mostly Unix tools.'
   },
   {
     companyName: 'Dextra Technologies',
@@ -132,7 +132,7 @@ export const experience = [
     stack: ['Shell Scripting', 'SQL', 'Embedded Systems'],
     image: [],
     period: 'Nov 2007 - Oct 2010',
-    description: 'Worked for Texas Instruments, specifically with Linux team to flash and work with new features for OMAP3 and OMAP4 processors.'
+    description: 'Worked for <strong>Texas Instruments</strong> with the Linux team, flashing and working on new features for OMAP3 and OMAP4 processors.'
   },
   {
     companyName: 'IBM',
@@ -147,7 +147,7 @@ export const experience = [
     stack: ['Shell Scripting', 'Z Series', 'Java'],
     image: [],
     period: 'Jul 2006 - Jan 2007',
-    description: 'Internship in last year of career. <br/> Member of the first pilot program to work directly with IBM for 6 months. IBM and Universidad de Colima had an agreement to integrate students to this new program and after some interviews from IBM employees, only 10 students were selected.'
+    description: 'Internship during the last year of my degree. <br /> I was part of the first pilot program between IBM and Universidad de Colima, working directly with IBM for six months. After interviews with IBM staff, only 10 students were selected.'
   },
   {
     companyName: 'MeediaHub',
@@ -157,11 +157,11 @@ export const experience = [
       logo: 'logos/meediahub.png'
     },
     category: ['entrepreneur', 'concepts'],
-    role: 'Founder and Software Developer',
+    role: 'Founder & Software Developer',
     stack: ['Node.js', 'MongoDB', 'JavaScript', 'HTML5 & CSS3', 'D3.js', 'jQuery'],
     image_: ['experience/meediahub-page.png'],
     image: [],
-    period: 'Jan 2014 - 2018 [Shut down]',
+    period: 'Jan 2014 - 2018 [Discontinued]',
     description: 'Social media aggregation platform for brands and events. It collected posts, photos and videos from Twitter, Instagram, Vine and Facebook by #hashtag and displayed them in real time on event screens, microsites and an embeddable website widget. Used by brands such as Chivas, HP, DaltonKia, Drea, Casa Clementina and CampusNight for digital campaigns, conferences and social events.'
   },
   {
@@ -174,7 +174,7 @@ export const experience = [
     role: 'Software Developer',
     stack: ['PHP', 'JavaScript', 'SQL', 'HTML & CSS'],
     image: [],
-    period: '2011 - 2012 [Shut down]',
-    description: 'Created some plugins for WordPress and some Chrome extensions for a service I created called ush.mx (URL shortener).'
+    period: '2011 - 2012 [Discontinued]',
+    description: 'Built WordPress plugins and Chrome extensions for ush.mx, a URL shortener I created.'
   }
 ];

@@ -20,7 +20,7 @@ function App() {
 
       <div>
         <div className="m-auto w-10/12">
-          <h3 className="uppercase text-2xl font-extrabold mb-3">I develop digital projects</h3>
+          <h3 className="uppercase text-2xl font-extrabold mb-3">I build digital products</h3>
           <p className="text-sm justify-center mb-3">
             Full stack developer with a bachelor's degree in Computer Science and about 20 years of experience in software, the last 11 focused on web development.
           </p>
@@ -28,7 +28,7 @@ function App() {
             I'm the founder of Caargo.mx, a SaaS platform for trucking companies in Mexico that I built end to end with Next.js, Node.js, MongoDB and AWS.
           </p>
           <p className="text-sm justify-center mb-3">
-            I also work as an AWS backend developer at NBCUniversal, building microservices with Node.js and AWS, and as a partner at MediaHunter, where I build e-commerce platforms. Previously, I was the AWS Tech Lead for Columbia's APIs and microservices.
+            I also work as an AWS backend developer at NBCUniversal, building microservices with Node.js and AWS, and as a partner at MediaHunter, where I lead the development of a platform for outdoor advertising. Previously, I was the AWS Tech Lead for Columbia's APIs and microservices.
           </p>
           <Stack />
         </div>
