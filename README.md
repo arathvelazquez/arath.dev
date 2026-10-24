@@ -25,9 +25,11 @@ Files that are not published live in `private/` with the same path they had unde
 
 1. Syncs `build/` to the `s3://arath.dev` bucket with `--delete`, so files no longer in `build/` are removed. `shared/` (the CV) and `.DS_Store` files are excluded. Uses the `default` AWS CLI profile.
 2. Invalidates `/*` in CloudFront (also with the `default` profile) (distribution `E1X45QNA77TKIT`, alias `arath.dev`). `www.arath.dev` is a separate bucket/distribution that redirects to `arath.dev`.
-3. Publishes `build/` to the `master` branch of `arathvelazquez.github.io` with gh-pages.
+3. Publishes `build/` to the `master` branch of the `webpage` remote (`arathvelazquez.github.io`) with gh-pages.
 
-To update git repository: git push webpage
+## Git remotes
 
-React app: arathvelazquez.github.io.git
-Code: arath.dev.git
+| Remote | Repo | Contents |
+|---|---|---|
+| `origin` | `arath.dev.git` | Source code. Push your commits here: `git push origin master` |
+| `webpage` | `arathvelazquez.github.io.git` | Built site for GitHub Pages. Only `npm run deploy` writes to it; never push source code here. |

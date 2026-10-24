@@ -8,7 +8,7 @@
     "start": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && aws s3 sync build/ s3://arath.dev --delete --exclude \"shared/*\" --exclude \"*.DS_Store\" --profile default && aws cloudfront create-invalidation --distribution-id E1X45QNA77TKIT --paths \"/*\" --no-cli-pager --profile default && gh-pages -b master -d build"
+    "deploy": "vite build && aws s3 sync build/ s3://arath.dev --delete --exclude \"shared/*\" --exclude \"*.DS_Store\" --profile default && aws cloudfront create-invalidation --distribution-id E1X45QNA77TKIT --paths \"/*\" --no-cli-pager --profile default && gh-pages -o webpage -b master -d build"
   },
   "engines": {
     "node": ">=20.19.0"
